@@ -35,7 +35,7 @@ class NoteRef extends \Gedcom\Parser\Component
             $note->setIsReference(true);
             $note->setNote($parser->normalizeIdentifier($record[2]));
         } else {
-            $parser->getCurrentLine();
+            //$parser->getCurrentLine();
             $note->setIsReference(false);
             $note->setNote($parser->parseMultiLineRecord());
         }
